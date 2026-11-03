@@ -7,5 +7,9 @@ ollama run llama3.2:3b
 # Unload the model after testing
 ollama stop llama3.2:3b
 
+# Install and add ollama LLM
+pnpm install ai-sdk-ollama
+import { ollama } from 'ai-sdk-ollama';
+
 # run ts file locally
 pnpx tsx stream-answer.ts
