@@ -1,0 +1,402 @@
+[
+    {
+        "id": "1",
+        "tenant_id": "site-01",
+        "product_id": "1",
+        "rating": 5,
+        "title": "Very comfortable",
+        "body": "The fabric is lightweight and comfortable. Perfect for hot summer days.",
+        "verified_purchase": true,
+        "created_at": "2026-10-10T10:00:00Z"
+    },
+    {
+        "id": "2",
+        "tenant_id": "site-01",
+        "product_id": "1",
+        "rating": 4,
+        "title": "Beautiful summer dress",
+        "body": "The color looks beautiful and the cotton quality is good. Slightly loose around the waist.",
+        "verified_purchase": true,
+        "created_at": "2026-10-12T08:30:00Z"
+    },
+    {
+        "id": "3",
+        "tenant_id": "site-01",
+        "product_id": "2",
+        "rating": 5,
+        "title": "Great denim quality",
+        "body": "Excellent jacket with good stitching. Looks stylish and fits perfectly.",
+        "verified_purchase": true,
+        "created_at": "2026-10-11T11:00:00Z"
+    },
+    {
+        "id": "4",
+        "tenant_id": "site-01",
+        "product_id": "2",
+        "rating": 3,
+        "title": "Average fitting",
+        "body": "The material is good but the sleeves are slightly longer than expected.",
+        "verified_purchase": true,
+        "created_at": "2026-10-15T09:00:00Z"
+    },
+    {
+        "id": "5",
+        "tenant_id": "site-01",
+        "product_id": "3",
+        "rating": 5,
+        "title": "Perfect office shirt",
+        "body": "Very comfortable cotton fabric. Looks professional and fits perfectly.",
+        "verified_purchase": true,
+        "created_at": "2026-10-13T07:30:00Z"
+    },
+    {
+        "id": "6",
+        "tenant_id": "site-01",
+        "product_id": "3",
+        "rating": 4,
+        "title": "Good value for money",
+        "body": "Nice quality shirt at this price. The fabric feels soft after washing.",
+        "verified_purchase": true,
+        "created_at": "2026-10-16T10:15:00Z"
+    },
+    {
+        "id": "7",
+        "tenant_id": "site-01",
+        "product_id": "4",
+        "rating": 5,
+        "title": "Excellent for running",
+        "body": "Lightweight shoes with excellent grip. Very comfortable for morning runs.",
+        "verified_purchase": true,
+        "created_at": "2026-10-14T06:45:00Z"
+    },
+    {
+        "id": "8",
+        "tenant_id": "site-01",
+        "product_id": "4",
+        "rating": 2,
+        "title": "Not comfortable for long runs",
+        "body": "The shoes look good but the cushioning is not sufficient for longer running sessions.",
+        "verified_purchase": true,
+        "created_at": "2026-10-18T12:00:00Z"
+    },
+    {
+        "id": "9",
+        "tenant_id": "site-01",
+        "product_id": "5",
+        "rating": 5,
+        "title": "Love these sneakers",
+        "body": "Very stylish and comfortable. I wear them almost every day.",
+        "verified_purchase": true,
+        "created_at": "2026-10-17T09:00:00Z"
+    },
+    {
+        "id": "10",
+        "tenant_id": "site-01",
+        "product_id": "5",
+        "rating": 4,
+        "title": "Good everyday shoes",
+        "body": "Comfortable for daily use. They do get dirty easily because of the white color.",
+        "verified_purchase": false,
+        "created_at": "2026-10-19T14:00:00Z"
+    },
+    {
+        "id": "11",
+        "tenant_id": "site-01",
+        "product_id": "6",
+        "rating": 5,
+        "title": "Amazing sound quality",
+        "body": "The bass is impressive and battery life is excellent. Great headphones for travel.",
+        "verified_purchase": true,
+        "created_at": "2026-10-20T10:00:00Z"
+    },
+    {
+        "id": "12",
+        "tenant_id": "site-01",
+        "product_id": "6",
+        "rating": 3,
+        "title": "Average noise isolation",
+        "body": "Sound quality is good but outside noise is still noticeable in busy environments.",
+        "verified_purchase": true,
+        "created_at": "2026-10-21T11:30:00Z"
+    },
+    {
+        "id": "13",
+        "tenant_id": "site-01",
+        "product_id": "7",
+        "rating": 4,
+        "title": "Useful fitness features",
+        "body": "Heart rate tracking and step counting work well. The display is bright and clear.",
+        "verified_purchase": true,
+        "created_at": "2026-10-22T08:00:00Z"
+    },
+    {
+        "id": "14",
+        "tenant_id": "site-01",
+        "product_id": "7",
+        "rating": 5,
+        "title": "Great smartwatch",
+        "body": "Easy to use and the battery lasts several days. Very useful for tracking daily activity.",
+        "verified_purchase": true,
+        "created_at": "2026-10-23T13:00:00Z"
+    },
+    {
+        "id": "15",
+        "tenant_id": "site-01",
+        "product_id": "8",
+        "rating": 5,
+        "title": "Premium leather quality",
+        "body": "The leather feels premium and the wallet has enough space for all my cards.",
+        "verified_purchase": true,
+        "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+        "id": "16",
+        "tenant_id": "site-01",
+        "product_id": "8",
+        "rating": 2,
+        "title": "Smaller than expected",
+        "body": "The wallet quality is decent but it is too small for carrying multiple cards and cash.",
+        "verified_purchase": false,
+        "created_at": "2026-10-25T10:30:00Z"
+    },
+    {
+        "id": "17",
+        "tenant_id": "site-01",
+        "product_id": "9",
+        "rating": 5,
+        "title": "Beautiful kurti",
+        "body": "The cotton fabric is soft and the floral print looks exactly like the pictures.",
+        "verified_purchase": true,
+        "created_at": "2026-10-26T07:45:00Z"
+    },
+    {
+        "id": "18",
+        "tenant_id": "site-01",
+        "product_id": "9",
+        "rating": 4,
+        "title": "Comfortable for daily wear",
+        "body": "Good quality and comfortable fitting. Would have preferred more color options.",
+        "verified_purchase": true,
+        "created_at": "2026-10-27T12:00:00Z"
+    },
+    {
+        "id": "19",
+        "tenant_id": "site-01",
+        "product_id": "10",
+        "rating": 5,
+        "title": "Beautiful traditional saree",
+        "body": "The saree looks elegant and the border work is beautiful. Perfect for festive occasions.",
+        "verified_purchase": true,
+        "created_at": "2026-10-28T11:00:00Z"
+    },
+    {
+        "id": "20",
+        "tenant_id": "site-01",
+        "product_id": "10",
+        "rating": 3,
+        "title": "Good but slightly expensive",
+        "body": "The design is attractive but the material feels lighter than I expected for this price.",
+        "verified_purchase": true,
+        "created_at": "2026-10-29T09:30:00Z"
+    },
+    {
+        "id": "21",
+        "tenant_id": "site-01",
+        "product_id": "11",
+        "rating": 5,
+        "title": "Perfect coffee mugs",
+        "body": "Beautiful design and good ceramic quality. Easy to clean and comfortable to hold.",
+        "verified_purchase": true,
+        "created_at": "2026-10-30T08:00:00Z"
+    },
+    {
+        "id": "22",
+        "tenant_id": "site-01",
+        "product_id": "11",
+        "rating": 1,
+        "title": "Received a damaged mug",
+        "body": "One of the mugs arrived with a small crack. Packaging needs improvement.",
+        "verified_purchase": true,
+        "created_at": "2026-10-31T14:00:00Z"
+    },
+    {
+        "id": "23",
+        "tenant_id": "site-01",
+        "product_id": "12",
+        "rating": 5,
+        "title": "Keeps water cold",
+        "body": "Excellent insulation. Water stays cold for hours and the bottle is easy to carry.",
+        "verified_purchase": true,
+        "created_at": "2026-11-01T07:30:00Z"
+    },
+    {
+        "id": "24",
+        "tenant_id": "site-01",
+        "product_id": "12",
+        "rating": 4,
+        "title": "Good bottle",
+        "body": "Strong build quality and useful for the gym. The cap could be easier to clean.",
+        "verified_purchase": true,
+        "created_at": "2026-11-01T12:30:00Z"
+    },
+    {
+        "id": "25",
+        "tenant_id": "site-01",
+        "product_id": "13",
+        "rating": 5,
+        "title": "Very soft bedsheet",
+        "body": "The cotton feels premium and the bedsheet is comfortable even in warm weather.",
+        "verified_purchase": true,
+        "created_at": "2026-11-02T10:00:00Z"
+    },
+    {
+        "id": "26",
+        "tenant_id": "site-01",
+        "product_id": "13",
+        "rating": 3,
+        "title": "Average color quality",
+        "body": "The fabric is soft but the color looks slightly different from the product image.",
+        "verified_purchase": false,
+        "created_at": "2026-11-02T15:00:00Z"
+    },
+    {
+        "id": "27",
+        "tenant_id": "site-01",
+        "product_id": "14",
+        "rating": 5,
+        "title": "Beautiful bedside lamp",
+        "body": "The warm light creates a relaxing atmosphere. Perfect for a bedroom.",
+        "verified_purchase": true,
+        "created_at": "2026-11-03T09:00:00Z"
+    },
+    {
+        "id": "28",
+        "tenant_id": "site-01",
+        "product_id": "14",
+        "rating": 4,
+        "title": "Good minimalist design",
+        "body": "Looks elegant and works well. The cable could be slightly longer.",
+        "verified_purchase": true,
+        "created_at": "2026-11-03T16:00:00Z"
+    },
+    {
+        "id": "29",
+        "tenant_id": "site-01",
+        "product_id": "15",
+        "rating": 4,
+        "title": "Comfortable track pants",
+        "body": "Lightweight and comfortable for workouts. The material dries quickly after washing.",
+        "verified_purchase": true,
+        "created_at": "2026-11-04T07:00:00Z"
+    },
+    {
+        "id": "30",
+        "tenant_id": "site-01",
+        "product_id": "15",
+        "rating": 2,
+        "title": "Not true to size",
+        "body": "The quality is okay but the waist fitting is tighter than expected.",
+        "verified_purchase": true,
+        "created_at": "2026-11-04T13:00:00Z"
+    },
+    {
+        "id": "31",
+        "tenant_id": "site-01",
+        "product_id": "16",
+        "rating": 5,
+        "title": "Great yoga mat",
+        "body": "Good grip and comfortable cushioning. Perfect for daily yoga and stretching.",
+        "verified_purchase": true,
+        "created_at": "2026-11-05T06:30:00Z"
+    },
+    {
+        "id": "32",
+        "tenant_id": "site-01",
+        "product_id": "17",
+        "rating": 4,
+        "title": "Lightweight serum",
+        "body": "Absorbs quickly and does not feel sticky. Packaging is also convenient.",
+        "verified_purchase": true,
+        "created_at": "2026-11-05T10:00:00Z"
+    },
+    {
+        "id": "33",
+        "tenant_id": "site-01",
+        "product_id": "18",
+        "rating": 3,
+        "title": "Average shampoo",
+        "body": "Cleans hair well but I did not notice any major improvement in hair texture.",
+        "verified_purchase": true,
+        "created_at": "2026-11-05T14:00:00Z"
+    },
+    {
+        "id": "34",
+        "tenant_id": "site-01",
+        "product_id": "19",
+        "rating": 5,
+        "title": "My kid loves this bag",
+        "body": "The backpack is lightweight and has enough space for school books and lunch.",
+        "verified_purchase": true,
+        "created_at": "2026-11-06T08:00:00Z"
+    },
+    {
+        "id": "35",
+        "tenant_id": "site-01",
+        "product_id": "20",
+        "rating": 4,
+        "title": "Soft cotton T-shirt",
+        "body": "Nice print and soft material. My child finds it comfortable to wear.",
+        "verified_purchase": true,
+        "created_at": "2026-11-06T11:00:00Z"
+    },
+    {
+        "id": "36",
+        "tenant_id": "site-01",
+        "product_id": "21",
+        "rating": 5,
+        "title": "Excellent travel backpack",
+        "body": "Very spacious with good laptop protection. Perfect for office and short trips.",
+        "verified_purchase": true,
+        "created_at": "2026-11-07T09:00:00Z"
+    },
+    {
+        "id": "37",
+        "tenant_id": "site-01",
+        "product_id": "22",
+        "rating": 4,
+        "title": "Stylish sunglasses",
+        "body": "Good looks and comfortable frames. Useful for driving in bright sunlight.",
+        "verified_purchase": false,
+        "created_at": "2026-11-07T12:00:00Z"
+    },
+    {
+        "id": "38",
+        "tenant_id": "site-01",
+        "product_id": "23",
+        "rating": 5,
+        "title": "Powerful portable speaker",
+        "body": "Surprisingly good sound for its size. Bluetooth connection is quick and stable.",
+        "verified_purchase": true,
+        "created_at": "2026-11-08T08:30:00Z"
+    },
+    {
+        "id": "39",
+        "tenant_id": "site-01",
+        "product_id": "24",
+        "rating": 2,
+        "title": "Food sticks to the pan",
+        "body": "The non-stick coating does not perform as expected after a few uses. Disappointed with the quality.",
+        "verified_purchase": true,
+        "created_at": "2026-11-08T11:00:00Z"
+    },
+    {
+        "id": "40",
+        "tenant_id": "site-01",
+        "product_id": "25",
+        "rating": 5,
+        "title": "Very absorbent towels",
+        "body": "Soft, thick and highly absorbent. Excellent quality for the price.",
+        "verified_purchase": true,
+        "created_at": "2026-11-08T14:00:00Z"
+    }
+]

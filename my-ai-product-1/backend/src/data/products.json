@@ -1,0 +1,532 @@
+[
+    {
+        "id": "1",
+        "tenant_id": "site-01",
+        "name": "Premium Cotton Summer Dress",
+        "description": "Lightweight 100% cotton summer dress with a comfortable fit, breathable fabric and elegant design.",
+        "category": "Women Clothing",
+        "price": 1299,
+        "currency": "INR",
+        "color": "Navy Blue",
+        "material": "100% Cotton",
+        "occasions": [
+            "Casual",
+            "Summer Vacation"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "2",
+        "tenant_id": "site-01",
+        "name": "Classic Denim Jacket",
+        "description": "Stylish blue denim jacket with durable stitching, front pockets and a relaxed fit.",
+        "category": "Women Clothing",
+        "price": 1899,
+        "currency": "INR",
+        "color": "Light Blue",
+        "material": "Denim Cotton",
+        "occasions": [
+            "Casual",
+            "Travel",
+            "Winter"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "3",
+        "tenant_id": "site-01",
+        "name": "Men's Slim Fit Cotton Shirt",
+        "description": "Premium slim-fit cotton shirt suitable for office wear and casual outings.",
+        "category": "Men Clothing",
+        "price": 999,
+        "currency": "INR",
+        "color": "White",
+        "material": "100% Cotton",
+        "occasions": [
+            "Office",
+            "Casual",
+            "Formal"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "4",
+        "tenant_id": "site-01",
+        "name": "Men's Running Shoes",
+        "description": "Lightweight running shoes with breathable mesh, cushioned soles and excellent grip.",
+        "category": "Footwear",
+        "price": 2499,
+        "currency": "INR",
+        "color": "Black",
+        "material": "Mesh and Rubber",
+        "occasions": [
+            "Running",
+            "Gym",
+            "Sports"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "5",
+        "tenant_id": "site-01",
+        "name": "Women's Casual Sneakers",
+        "description": "Everyday sneakers with soft cushioning and a modern minimalist design.",
+        "category": "Footwear",
+        "price": 1799,
+        "currency": "INR",
+        "color": "White",
+        "material": "Synthetic Leather",
+        "occasions": [
+            "Casual",
+            "Travel",
+            "Daily Wear"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "6",
+        "tenant_id": "site-01",
+        "name": "Wireless Bluetooth Headphones",
+        "description": "Over-ear wireless headphones featuring deep bass, noise isolation and long battery life.",
+        "category": "Electronics",
+        "price": 2999,
+        "currency": "INR",
+        "color": "Black",
+        "material": "ABS Plastic",
+        "occasions": [
+            "Travel",
+            "Work",
+            "Entertainment"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "7",
+        "tenant_id": "site-01",
+        "name": "Smart Fitness Watch",
+        "description": "Fitness smartwatch with heart rate monitoring, sleep tracking and multiple sports modes.",
+        "category": "Electronics",
+        "price": 3499,
+        "currency": "INR",
+        "color": "Midnight Black",
+        "material": "Aluminium and Silicone",
+        "occasions": [
+            "Fitness",
+            "Sports",
+            "Daily Wear"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "8",
+        "tenant_id": "site-01",
+        "name": "Premium Leather Wallet",
+        "description": "Compact genuine leather wallet with multiple card slots and a secure currency compartment.",
+        "category": "Accessories",
+        "price": 899,
+        "currency": "INR",
+        "color": "Brown",
+        "material": "Genuine Leather",
+        "occasions": [
+            "Office",
+            "Casual",
+            "Gifting"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "9",
+        "tenant_id": "site-01",
+        "name": "Women's Floral Kurti",
+        "description": "Elegant floral printed kurti made from soft breathable cotton for everyday comfort.",
+        "category": "Ethnic Wear",
+        "price": 799,
+        "currency": "INR",
+        "color": "Pink",
+        "material": "Cotton",
+        "occasions": [
+            "Casual",
+            "Festive",
+            "Daily Wear"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "10",
+        "tenant_id": "site-01",
+        "name": "Traditional Silk Saree",
+        "description": "Beautiful silk saree with intricate traditional patterns and an elegant border.",
+        "category": "Ethnic Wear",
+        "price": 4999,
+        "currency": "INR",
+        "color": "Maroon",
+        "material": "Art Silk",
+        "occasions": [
+            "Wedding",
+            "Festive",
+            "Party"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "11",
+        "tenant_id": "site-01",
+        "name": "Ceramic Coffee Mug Set",
+        "description": "Set of two premium ceramic coffee mugs with a smooth finish and comfortable handles.",
+        "category": "Home and Kitchen",
+        "price": 599,
+        "currency": "INR",
+        "color": "White",
+        "material": "Ceramic",
+        "occasions": [
+            "Home",
+            "Office",
+            "Gifting"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "12",
+        "tenant_id": "site-01",
+        "name": "Stainless Steel Water Bottle",
+        "description": "Double-wall insulated water bottle that keeps drinks hot or cold for several hours.",
+        "category": "Home and Kitchen",
+        "price": 699,
+        "currency": "INR",
+        "color": "Silver",
+        "material": "Stainless Steel",
+        "occasions": [
+            "Travel",
+            "Gym",
+            "Office"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "13",
+        "tenant_id": "site-01",
+        "name": "Organic Cotton Bedsheet",
+        "description": "Soft and breathable double-bed bedsheet made from organic cotton with matching pillow covers.",
+        "category": "Home Decor",
+        "price": 1599,
+        "currency": "INR",
+        "color": "Beige",
+        "material": "Organic Cotton",
+        "occasions": [
+            "Home",
+            "Bedroom"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "14",
+        "tenant_id": "site-01",
+        "name": "Minimalist Table Lamp",
+        "description": "Modern bedside table lamp with warm LED lighting and a stylish minimalist design.",
+        "category": "Home Decor",
+        "price": 1199,
+        "currency": "INR",
+        "color": "White",
+        "material": "Metal and Fabric",
+        "occasions": [
+            "Home",
+            "Bedroom",
+            "Office"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "15",
+        "tenant_id": "site-01",
+        "name": "Men's Sports Track Pants",
+        "description": "Comfortable quick-dry track pants with an elastic waistband and side pockets.",
+        "category": "Sportswear",
+        "price": 899,
+        "currency": "INR",
+        "color": "Charcoal Grey",
+        "material": "Polyester",
+        "occasions": [
+            "Gym",
+            "Running",
+            "Casual"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "16",
+        "tenant_id": "site-01",
+        "name": "Yoga Exercise Mat",
+        "description": "Non-slip yoga mat with extra cushioning for stretching, meditation and daily workouts.",
+        "category": "Fitness",
+        "price": 999,
+        "currency": "INR",
+        "color": "Purple",
+        "material": "TPE",
+        "occasions": [
+            "Yoga",
+            "Fitness",
+            "Home Workout"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "17",
+        "tenant_id": "site-01",
+        "name": "Vitamin C Face Serum",
+        "description": "Lightweight facial serum formulated to brighten skin and improve overall skin appearance.",
+        "category": "Beauty and Personal Care",
+        "price": 549,
+        "currency": "INR",
+        "color": "Transparent",
+        "material": "Vitamin C Formula",
+        "occasions": [
+            "Skincare",
+            "Daily Use"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "18",
+        "tenant_id": "site-01",
+        "name": "Herbal Shampoo",
+        "description": "Gentle herbal shampoo designed for everyday hair cleansing and scalp care.",
+        "category": "Beauty and Personal Care",
+        "price": 399,
+        "currency": "INR",
+        "color": "Green",
+        "material": "Herbal Extracts",
+        "occasions": [
+            "Hair Care",
+            "Daily Use"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "19",
+        "tenant_id": "site-01",
+        "name": "Kids Cartoon Backpack",
+        "description": "Lightweight school backpack with padded shoulder straps and multiple storage compartments.",
+        "category": "Kids",
+        "price": 799,
+        "currency": "INR",
+        "color": "Blue",
+        "material": "Polyester",
+        "occasions": [
+            "School",
+            "Travel"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "20",
+        "tenant_id": "site-01",
+        "name": "Kids Cotton T-Shirt",
+        "description": "Soft cotton printed T-shirt for children with a comfortable fit and vibrant design.",
+        "category": "Kids",
+        "price": 399,
+        "currency": "INR",
+        "color": "Yellow",
+        "material": "100% Cotton",
+        "occasions": [
+            "Casual",
+            "Daily Wear"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "21",
+        "tenant_id": "site-01",
+        "name": "Travel Laptop Backpack",
+        "description": "Spacious laptop backpack with padded laptop protection, water-resistant fabric and multiple compartments.",
+        "category": "Bags",
+        "price": 1999,
+        "currency": "INR",
+        "color": "Black",
+        "material": "Polyester",
+        "occasions": [
+            "Office",
+            "Travel",
+            "College"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "22",
+        "tenant_id": "site-01",
+        "name": "Polarized Sunglasses",
+        "description": "Stylish polarized sunglasses with UV protection and lightweight frames for outdoor use.",
+        "category": "Accessories",
+        "price": 1299,
+        "currency": "INR",
+        "color": "Black",
+        "material": "Polycarbonate",
+        "occasions": [
+            "Travel",
+            "Outdoor",
+            "Casual"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "23",
+        "tenant_id": "site-01",
+        "name": "Wireless Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with powerful sound, compact design and rechargeable battery.",
+        "category": "Electronics",
+        "price": 1599,
+        "currency": "INR",
+        "color": "Blue",
+        "material": "ABS Plastic",
+        "occasions": [
+            "Travel",
+            "Party",
+            "Home"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "24",
+        "tenant_id": "site-01",
+        "name": "Non-Stick Cookware Set",
+        "description": "Three-piece non-stick cookware set suitable for everyday cooking and easy cleaning.",
+        "category": "Home and Kitchen",
+        "price": 2499,
+        "currency": "INR",
+        "color": "Black",
+        "material": "Aluminium",
+        "occasions": [
+            "Cooking",
+            "Home"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "25",
+        "tenant_id": "site-01",
+        "name": "Premium Cotton Towel Set",
+        "description": "Soft and highly absorbent cotton towel set suitable for everyday bathroom use.",
+        "category": "Home Decor",
+        "price": 899,
+        "currency": "INR",
+        "color": "Aqua Blue",
+        "material": "100% Cotton",
+        "occasions": [
+            "Bathroom",
+            "Daily Use"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "26",
+        "tenant_id": "site-01",
+        "name": "Women's Running Jacket",
+        "description": "Lightweight wind-resistant running jacket with breathable fabric and zippered pockets.",
+        "category": "Sportswear",
+        "price": 2199,
+        "currency": "INR",
+        "color": "Pink",
+        "material": "Polyester",
+        "occasions": [
+            "Running",
+            "Outdoor",
+            "Gym"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "27",
+        "tenant_id": "site-01",
+        "name": "Classic Analog Wrist Watch",
+        "description": "Elegant analog wristwatch with a minimalist dial, durable strap and water-resistant design.",
+        "category": "Accessories",
+        "price": 2799,
+        "currency": "INR",
+        "color": "Silver",
+        "material": "Stainless Steel",
+        "occasions": [
+            "Office",
+            "Formal",
+            "Gifting"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "28",
+        "tenant_id": "site-01",
+        "name": "Electric Coffee Grinder",
+        "description": "Compact electric coffee grinder with stainless steel blades and easy one-touch operation.",
+        "category": "Home and Kitchen",
+        "price": 1499,
+        "currency": "INR",
+        "color": "Black",
+        "material": "Stainless Steel and ABS",
+        "occasions": [
+            "Kitchen",
+            "Home"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "29",
+        "tenant_id": "site-01",
+        "name": "Premium Travel Duffel Bag",
+        "description": "Spacious travel duffel bag with durable handles, adjustable shoulder strap and shoe compartment.",
+        "category": "Bags",
+        "price": 1699,
+        "currency": "INR",
+        "color": "Olive Green",
+        "material": "Water-resistant Polyester",
+        "occasions": [
+            "Travel",
+            "Gym",
+            "Weekend Trip"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    },
+    {
+        "id": "30",
+        "tenant_id": "site-01",
+        "name": "Ceramic Flower Vase",
+        "description": "Decorative ceramic flower vase with a modern design suitable for living rooms and bedrooms.",
+        "category": "Home Decor",
+        "price": 699,
+        "currency": "INR",
+        "color": "Terracotta",
+        "material": "Ceramic",
+        "occasions": [
+            "Home Decor",
+            "Gifting"
+        ],
+        "image_url": "https://picsum.photos/id/1/400/500",
+        "active": true
+    }
+]

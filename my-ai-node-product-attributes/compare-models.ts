@@ -1,7 +1,9 @@
 import { streamText } from "ai";
 import { ollama } from 'ai-sdk-ollama';
-const model = ollama('llama3.2:3b');
-const MODEL_NAME = 'llama3.2:3b';
+
+//const MODEL_NAME = 'llama3.2:1b'; 
+const MODEL_NAME = 'llama3.2:3b'
+const model = ollama(MODEL_NAME);
 
 const prompt = `
   You are an ecommerce product assistant.
