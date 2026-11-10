@@ -1,24 +1,21 @@
+
 import type { Request, Response } from "express";
 import {
     pipeUIMessageStreamToResponse,
-    toUIMessageStream,
-    type UIMessage,
 } from "ai";
 
 import { chatService } from "../services/chat.service";
-
-interface ChatRequestBody {
-    messages: UIMessage[];
-}
+import type { ChatMessage } from "../types/chat";
 
 export async function chatController(
-    req: Request<{}, {}, ChatRequestBody>,
+    req: Request,
     res: Response
 ) {
     try {
-        const { messages } = req.body;
+        const { messages } = req.body as {
+            messages: ChatMessage[];
+        };
 
-        // Basic validation
         if (!Array.isArray(messages) || messages.length === 0) {
             res.status(400).json({
                 error: "Messages are required",
@@ -26,15 +23,11 @@ export async function chatController(
             return;
         }
 
-        // Call chat service
-        const result = await chatService(messages);
+        const stream = await chatService(messages);
 
-        // Stream AI response to frontend
         pipeUIMessageStreamToResponse({
             response: res,
-            stream: toUIMessageStream({
-                stream: result.stream,
-            }),
+            stream,
         });
 
     } catch (error) {

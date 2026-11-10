@@ -2,6 +2,8 @@
 
 import { useChat } from "@ai-sdk/react";
 import { useState } from "react";
+import type { ChatMessage } from "../../types/chat";
+import ProductCard from "../productCard/produtCard"
 import { DefaultChatTransport } from "ai";
 
 export default function Chat() {
@@ -14,7 +16,7 @@ export default function Chat() {
         error,
         stop,
         regenerate,
-    } = useChat({
+    } = useChat<ChatMessage>({
         transport: new DefaultChatTransport({
             api: "http://localhost:3001/api/chat",
         }),
@@ -39,20 +41,40 @@ export default function Chat() {
         <div className="chat-container">
 
             <div className="chat-messages">
-                {messages.map((message) => (
-                    <div
-                        key={message.id}
-                        className={`message ${message.role}`}
-                    >
-                        <strong>
-                            {message.role === "user" ? "You" : "AI"}
-                        </strong>
 
-                        {message.parts.map((part, index) =>
-                            part.type === "text" ? (
-                                <p key={index}>{part.text}</p>
-                            ) : null
-                        )}
+                {messages.map((message) => (
+                    <div key={message.id} className={`message ${message.role}`}>
+
+                        {message.parts.map((part, index) => {
+
+                            // Normal AI text
+                            if (part.type === "text") {
+                                return (
+                                    <p key={index}>
+                                        {part.text}
+                                    </p>
+                                );
+                            }
+
+                            // Custom product data
+                            if (part.type === "data-products") {
+                                return (
+                                    <div key={index} className="product-list">
+
+                                        {part.data.map((product) => (
+                                            <ProductCard
+                                                key={product.id}
+                                                product={product}
+                                            />
+                                        ))}
+
+                                    </div>
+                                );
+                            }
+
+                            return null;
+                        })}
+
                     </div>
                 ))}
 
