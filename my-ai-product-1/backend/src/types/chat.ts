@@ -1,8 +1,8 @@
 import type { UIMessage } from "ai";
-import type { Product } from "./product";
+import type { ProductSearchResult } from "./product-search";
 
 export type ChatDataParts = {
-    products: Product[];
+    products: ProductSearchResult[];
 };
 
 export type ChatMessage = UIMessage<

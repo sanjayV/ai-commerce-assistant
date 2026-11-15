@@ -1,13 +1,17 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { ReviewRepository } from "../interfaces/review.repository";
 import { Review } from "../../types/review";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export class JsonReviewRepository implements ReviewRepository {
 
     private async getReviews(): Promise<Review[]> {
-        const filePath = path.resolve(process.cwd(), "src/data/reviews.json");
+        const filePath = path.resolve(__dirname, "../../data/reviews.json");
 
         const data = await readFile(filePath, "utf-8");
 

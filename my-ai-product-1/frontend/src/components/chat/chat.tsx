@@ -1,10 +1,12 @@
+
 'use client';
 
 import { useChat } from "@ai-sdk/react";
 import { useState } from "react";
 import type { ChatMessage } from "../../types/chat";
-import ProductCard from "../productCard/produtCard"
+import ProductCard from "../productCard/produtCard";
 import { DefaultChatTransport } from "ai";
+import './chat.css';
 
 export default function Chat() {
     const [input, setInput] = useState("");
@@ -43,11 +45,12 @@ export default function Chat() {
             <div className="chat-messages">
 
                 {messages.map((message) => (
-                    <div key={message.id} className={`message ${message.role}`}>
-
+                    <div
+                        key={message.id}
+                        className={`message ${message.role}`}
+                    >
                         {message.parts.map((part, index) => {
 
-                            // Normal AI text
                             if (part.type === "text") {
                                 return (
                                     <p key={index}>
@@ -56,25 +59,21 @@ export default function Chat() {
                                 );
                             }
 
-                            // Custom product data
                             if (part.type === "data-products") {
                                 return (
                                     <div key={index} className="product-list">
-
                                         {part.data.map((product) => (
                                             <ProductCard
                                                 key={product.id}
                                                 product={product}
                                             />
                                         ))}
-
                                     </div>
                                 );
                             }
 
                             return null;
                         })}
-
                     </div>
                 ))}
 
@@ -93,22 +92,35 @@ export default function Chat() {
                         </button>
                     </div>
                 )}
+
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form
+                className="chat-input-form"
+                onSubmit={handleSubmit}
+            >
                 <input
+                    type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask me anything..."
+                    placeholder="Ask about products or reviews..."
+                    disabled={isLoading}
                 />
 
-                <button type="submit" disabled={!input.trim() || isLoading}>
-                    Send
-                </button>
-
-                {isLoading && (
-                    <button type="button" onClick={stop}>
+                {isLoading ? (
+                    <button
+                        type="button"
+                        className="stop-button"
+                        onClick={stop}
+                    >
                         Stop
+                    </button>
+                ) : (
+                    <button
+                        type="submit"
+                        disabled={!input.trim()}
+                    >
+                        Send
                     </button>
                 )}
             </form>
