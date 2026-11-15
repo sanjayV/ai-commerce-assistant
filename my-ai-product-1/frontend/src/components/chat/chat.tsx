@@ -49,31 +49,27 @@ export default function Chat() {
                         key={message.id}
                         className={`message ${message.role}`}
                     >
-                        {message.parts.map((part, index) => {
+                        {message.parts
+                        .filter((part) => part.type === "text")
+                        .map((part, index) => (
+                            <p key={index}>
+                                {part.text}
+                            </p>
+                        ))}
 
-                            if (part.type === "text") {
-                                return (
-                                    <p key={index}>
-                                        {part.text}
-                                    </p>
-                                );
-                            }
-
-                            if (part.type === "data-products") {
-                                return (
-                                    <div key={index} className="product-list">
-                                        {part.data.map((product) => (
-                                            <ProductCard
-                                                key={product.id}
-                                                product={product}
-                                            />
-                                        ))}
-                                    </div>
-                                );
-                            }
-
-                            return null;
-                        })}
+                        {/* 2. Render product cards second */}
+                        {message.parts
+                            .filter((part) => part.type === "data-products")
+                            .map((part, index) => (
+                                <div key={index} className="product-list">
+                                    {part.data.map((product) => (
+                                        <ProductCard
+                                            key={product.id}
+                                            product={product}
+                                        />
+                                    ))}
+                                </div>
+                            ))}
                     </div>
                 ))}
 

@@ -187,7 +187,13 @@ export class ProductSearchService {
                 // Otherwise require at least one keyword match.
                 return keywords.length === 0 || product.searchScore > 0;
             })
-            .sort((a, b) => b.searchScore - a.searchScore)
+            .sort((a, b) => {
+                if (sortByRating) {
+                    return b.averageRating - a.averageRating;
+                }
+
+                return b.searchScore - a.searchScore;
+            })
             .slice(0, 10);
 
         return results.map(({ searchScore, ...product }) => product);

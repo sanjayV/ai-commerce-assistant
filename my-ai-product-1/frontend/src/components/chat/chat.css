@@ -28,6 +28,16 @@
     justify-content: flex-end;
 }
 
+.message.assistant {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 80%;
+    background: #eaf2ff;
+    border-radius: 18px;
+    padding: 12px 18px;
+}
+
 .message.user p {
     max-width: 75%;
     padding: 12px 18px;
