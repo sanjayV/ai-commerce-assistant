@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "1",
+    "product_id": "1",
+    "content": "Very comfortable. The fabric is lightweight and comfortable. Perfect for hot summer days."
+  },
+  {
+    "id": "2",
+    "product_id": "1",
+    "content": "Beautiful summer dress. The color looks beautiful and the cotton quality is good. Slightly loose around the waist."
+  },
+  {
+    "id": "3",
+    "product_id": "2",
+    "content": "Great denim quality. Excellent jacket with good stitching. Looks stylish and fits perfectly."
+  },
+  {
+    "id": "4",
+    "product_id": "2",
+    "content": "Average fitting. The material is good but the sleeves are slightly longer than expected."
+  },
+  {
+    "id": "5",
+    "product_id": "3",
+    "content": "Perfect office shirt. Very comfortable cotton fabric. Looks professional and fits perfectly."
+  },
+  {
+    "id": "6",
+    "product_id": "3",
+    "content": "Good value for money. Nice quality shirt at this price. The fabric feels soft after washing."
+  },
+  {
+    "id": "7",
+    "product_id": "4",
+    "content": "Excellent for running. Lightweight shoes with excellent grip. Very comfortable for morning runs."
+  },
+  {
+    "id": "8",
+    "product_id": "4",
+    "content": "Not comfortable for long runs. The shoes look good but the cushioning is not sufficient for longer running sessions."
+  },
+  {
+    "id": "9",
+    "product_id": "5",
+    "content": "Love these sneakers. Very stylish and comfortable. I wear them almost every day."
+  },
+  {
+    "id": "10",
+    "product_id": "5",
+    "content": "Good everyday shoes. Comfortable for daily use. They do get dirty easily because of the white color."
+  }
+]
