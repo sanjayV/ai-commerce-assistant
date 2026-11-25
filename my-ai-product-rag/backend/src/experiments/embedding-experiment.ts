@@ -1,4 +1,9 @@
+import { embed, embedMany, cosineSimilarity } from "ai";
+import { ollama } from "ai-sdk-ollama";
 import { readFile } from "node:fs/promises";
+
+const embeddingModel = ollama.embedding("nomic-embed-text");
+
 
 interface ProductRecord {
     id: string;
@@ -19,6 +24,9 @@ interface ExperimentDocument {
         productId: string;
     };
 }
+
+// Customer question
+const customerQuestion = "Are these shoes comfortable for long-distance running?";
 
 async function main() {
     // Load existing JSON files
@@ -66,12 +74,95 @@ async function main() {
         ...reviewDocuments,
     ];
 
-    console.log("Total documents:", documents.length);
-    console.log("Product documents:", productDocuments.length);
-    console.log("Review documents:", reviewDocuments.length);
+    // Extract only the text content from documents
+    const documentTexts = documents.map(
+        (document) => document.content
+    );
 
-    console.log("\nPrepared documents:");
-    console.log(documents);
+    // Generate embeddings for all documents
+    const { embeddings } = await embedMany({
+        model: embeddingModel,
+        values: documentTexts,
+    });
+
+    const documentsWithEmbeddings = documents.map(
+        (document, index) => {
+            const embedding = embeddings[index];
+
+            if (!embedding) {
+                throw new Error(
+                    `Missing embedding for ${document.id}`
+                );
+            }
+
+            return {
+                ...document,
+                embedding,
+            };
+        }
+    );
+
+    // Generate question embedding
+    const { embedding: questionEmbedding } = await embed({
+        model: embeddingModel,
+        value: customerQuestion,
+    });
+
+    // Calculate similarity between question and each document
+    const scoredDocuments = documentsWithEmbeddings.map(
+        (document) => {
+            const similarity = cosineSimilarity(
+                questionEmbedding,
+                document.embedding
+            );
+
+            return {
+                ...document,
+                similarity,
+            };
+        }
+    );
+
+    // Sort documents by similarity (highest first)
+    const sortedDocuments = [...scoredDocuments].sort(
+        (a, b) => b.similarity - a.similarity
+    );
+
+    // Retrieve top 5 documents
+    const topResults = sortedDocuments.slice(0, 5);
+
+    console.log("\nTop 5 matching documents:");
+
+    topResults.forEach((document, index) => {
+        console.log(`\n${index + 1}. ${document.id}`);
+        console.log(`Type: ${document.metadata.type}`);
+        console.log(`Product ID: ${document.metadata.productId}`);
+        console.log(`Similarity: ${document.similarity.toFixed(4)}`);
+        console.log(`Content: ${document.content}`);
+    });
+
+    // console.log("\nEmbedding generation completed!");
+
+    // console.log("Documents passed:", documentTexts.length);
+    // console.log("Embeddings generated:", embeddings.length);
+    // console.log("Vector dimensions:", embeddings[0]?.length);
+    // console.log("\nEmbedded documents:");
+
+    // console.log(
+    //     documentsWithEmbeddings.map((document) => ({
+    //         id: document.id,
+    //         type: document.metadata.type,
+    //         dimensions: document.embedding.length,
+    //         firstFiveValues: document.embedding.slice(0, 5),
+    //     }))
+    // );
+
+    // console.log("\nCustomer question:");
+    // console.log(customerQuestion);
+
+    // console.log("\nQuestion embedding:");
+    // console.log("Vector dimensions:", questionEmbedding.length);
+    // console.log("First 5 values:", questionEmbedding.slice(0, 5));
 }
 
 main().catch(console.error);
